@@ -29,14 +29,14 @@ function Firstapp() {
       <div className='flex justify-center'>
         <div className='w-1/3 h-auto shadow-2xl text-center'>
           <div className='p-6'>
-            <table>
+            <table className='table-fixed border border-slate-950'>
               <tbody>
                 {allInfo.map((el, i) => (
                   <tr key={i}>
-                    <td>{el.name}</td>
-                    <td>{el.age}</td>
-                    <td>{el.nationality}</td>
-                    <td>
+                    <td className='border border-slate-950 p-2'>{el.name}</td>
+                    <td className='border border-slate-950 p-2'>{el.age}</td>
+                    <td className='border border-slate-950 p-2'>{el.nationality}</td>
+                    <td className='border border-slate-950 p-2'>
                       <button
                         onClick={() => deleteInfo(i)}
                         className='bg-red-500 text-white px-3 py-1 rounded-md'
